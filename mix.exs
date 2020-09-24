@@ -30,7 +30,7 @@ defmodule FlattenMap.MixProject do
 
   defp package() do
     [
-      description: "Library to flatten arbitrarily deep nested maps.",
+      description: "Elixir module to flatten arbitrarily deep nested maps",
       licenses: ["Apache-2.0"],
       links: %{"GitHub" => "https://github.com/NullOranje/flatten_map"}
     ]
