@@ -1,3 +1,5 @@
+![Elixir CI](https://github.com/NullOranje/flatten_map/workflows/Elixir%20CI/badge.svg?branch=master)
+
 # FlattenMap
 
 A tool for flattening nested maps.
