@@ -17,14 +17,14 @@ defmodule FlattenMap do
 
   ## Examples
 
-    iex> %{a: 1} |> FlattenMap.flatten()
-    %{"a" => 1}
+      iex> %{a: 1} |> FlattenMap.flatten()
+      %{"a" => 1}
 
-    iex> %{a: %{b: 1, c: 2}} |> FlattenMap.flatten()
-    %{"a.b" => 1, "a.c" => 2}
+      iex> %{a: %{b: 1, c: 2}} |> FlattenMap.flatten()
+      %{"a.b" => 1, "a.c" => 2}
 
-    iex> %{"a" => %{b: %{c: %{d: :end}}}} |> FlattenMap.flatten()
-    %{"a.b.c.d" => :end}
+      iex> %{"a" => %{b: %{c: %{d: :end}}}} |> FlattenMap.flatten()
+      %{"a.b.c.d" => :end}
 
   """
   def flatten(m, delimeter \\ ".")
