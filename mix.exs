@@ -1,6 +1,8 @@
 defmodule FlattenMap.MixProject do
   use Mix.Project
 
+  @source_url "https://github.com/NullOranje/flatten_map"
+
   def project do
     [
       app: :flatten_map,
@@ -22,8 +24,9 @@ defmodule FlattenMap.MixProject do
 
   defp docs do
     [
+      main: "FlattenMap",
       name: "flatten_map",
-      source_url: "https://github.com/NullOranje/flatten_map",
+      source_url: @source_url,
       extras: ["README.md"]
     ]
   end
@@ -32,7 +35,7 @@ defmodule FlattenMap.MixProject do
     [
       description: "Elixir module to flatten arbitrarily deep nested maps",
       licenses: ["Apache-2.0"],
-      links: %{"GitHub" => "https://github.com/NullOranje/flatten_map"}
+      links: %{"GitHub" => @source_url}
     ]
   end
 
